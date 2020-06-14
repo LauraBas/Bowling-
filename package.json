@@ -1,0 +1,16 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "katas",
+  "main": "Bowling.js",
+  "dependencies": {
+    "@jest/globals": "^26.0.1",
+    "jest": "^26.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "laura bassani",
+  "license": "ISC"
+}
