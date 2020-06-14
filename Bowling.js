@@ -1,6 +1,6 @@
 class Bowling {
     points
-   countRolls
+    countRolls
 
     constructor() {
         this.points = 0;

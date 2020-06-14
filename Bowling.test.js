@@ -16,25 +16,10 @@ test("roll updates score",() => {
 test("is game over?", () => {
     let bowling = new Bowling()
     expect(bowling.isGameOver()).toBeFalsy()
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
-    bowling.roll(1)
+    for (let i = 0; i < 20; i++) {
+        bowling.roll(1)
+    }
     expect(bowling.isGameOver()).toBeTruthy()
 })
+
+
