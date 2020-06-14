@@ -1,11 +1,11 @@
 const Bowling = require("./Bowling")
 
-test("score starts at 0",() => {
+test("score starts at 0", () => {
     let bowling = new Bowling()
     expect(bowling.score()).toBe(0)
 })
 
-test("roll updates score",() => {
+test("roll updates score", () => {
     let bowling = new Bowling()
     bowling.roll(1)
     expect(bowling.score()).toBe(1)
@@ -20,6 +20,15 @@ test("is game over?", () => {
         bowling.roll(1)
     }
     expect(bowling.isGameOver()).toBeTruthy()
+})
+
+test("is this a spare?", () => {
+    let bowling = new Bowling()
+    bowling.roll(1)
+    bowling.roll(9)
+    expect(bowling.score()).toBe(10)
+    bowling.roll(4)
+    expect(bowling.score()).toBe(18)
 })
 
 
